@@ -1,0 +1,37 @@
+\documentclass[
+tate,
+book,
+paper=b6j,
+twoside,
+fontsize=9pt, % 欧文フォントサイズ
+jafontsize=9pt, % 和文フォントサイズ
+%head_space=17truemm, % 天の余白
+%gutter=20truemm, % ノドの余白
+%line_length=46zw, % 1行の文字数
+%number_of_lines=21, % 行数
+%column_gap=10truemm,% 段間
+headfoot_verticalposition=5truemm,%本文とヘッダ/フッタの間の空き
+]{jlreq}
+
+\usepackage{B6tate-jlreq}% B6tate-jlreq.sty を適用
+
+\begin{document}%
+\pagestyle{honbun}% ページスタイル honbun 適用
+
+%タイトルページ
+\thispagestyle{empty}
+\null\vspace{40.5truemm}% 右余白
+\begin{center}
+{\LARGE 吾輩は猫である}\hspace{2\zw}{\large 夏目漱石}% タイトル、2文字分空ける、筆者名
+\end{center}
+\newpage
+
+%以下に本文を書いていく。
+\pagestyle{honbun}% ページスタイル honbun に戻す
+
+\section{}
+
+
+
+
+\end{document}
